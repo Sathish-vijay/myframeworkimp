@@ -1,0 +1,52 @@
+Feature: AeroWeb FunctionalLocation Feature File
+
+  @FunctionalLocation @Regression
+  Scenario: FunctionalLocation Module end to end Regression       [90m# features/FunctionalLocation.feature:4[0m
+    [32mGiven [0m[32mUser navigated to login page[0m                            [90m# LoginStepDef.user_navigated_to_login_page()[0m
+    [32mWhen [0m[32mUser enter Username and Password[0m                         [90m# LoginStepDef.user_enter_below_and()[0m
+    [32mAnd [0m[32mSelect given Workspace and Language[0m                       [90m# LoginStepDef.select_below_given_Workspace_and_Language()[0m
+    [32mAnd [0m[32mclick on connect button[0m                                   [90m# LoginStepDef.click_on_connect_button()[0m
+    [32mThen [0m[32mverify user logged in successfully[0m                       [90m# LoginStepDef.verify_user_logged_in_successfully()[0m
+    [32mWhen [0m[32mclick on Engineering Data Tab[0m                            [90m# FunctionalLocationStepDef.click_on_Engineering_Data_Tab()[0m
+    [32mAnd [0m[32mselect "[0m[32m[1mFunctional Location[0m[32m" option[0m                       [90m# ProductFamilyStepDef.select_option(String)[0m
+    [31mAnd [0m[31mfl verify the below Search fields under search page[0m       [90m# FunctionalLocationStepDef.fl_verify_the_below_Search_fields_under_search_page()[0m
+      [31morg.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=89.0.4389.90)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'ITEM-S73641', ip: '10.246.160.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\mansingh\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.90, webStorageEnabled: true}
+Session ID: 27c1a59d5cad2e930252222000552947
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+	at utilities.TestUtil.capture(TestUtil.java:82)
+	at extentlisteners.Report.logIntoReport(Report.java:55)
+	at utilities.TestUtil.assertLabel(TestUtil.java:356)
+	at PageObjects.FunctionalLocation.ValidateSearchfields(FunctionalLocation.java:299)
+	at stepdefination.FunctionalLocationStepDef.fl_verify_the_below_Search_fields_under_search_page(FunctionalLocationStepDef.java:334)
+	at ✽.fl verify the below Search fields under search page(classpath:features/FunctionalLocation.feature:69)
+[0m
+    [36mAnd [0m[36mfl Enter value in below Search fields[0m                     [90m# FunctionalLocationStepDef.fl_Enter_value_in_below_Search_fields()[0m
+    [36mAnd [0m[36mfl click on Search button[0m                                 [90m# FunctionalLocationStepDef.fl_click_on_Search_button()[0m
+    [36mAnd [0m[36mfl verify below Result table column fields[0m                [90m# FunctionalLocationStepDef.fl_verify_below_Result_table_column_fields()[0m
+    [36mAnd [0m[36mfl verify search value present under Result table[0m         [90m# FunctionalLocationStepDef.fl_verify_search_value_present_under_Result_table()[0m
+    [36mThen [0m[36mfl Click On FL Code present under Result table[0m           [90m# FunctionalLocationStepDef.fl_Click_On_FL_Code_present_under_Result_table()[0m
+    [36mAnd [0m[36mfl verify below information displayed on are non editable[0m [90m# FunctionalLocationStepDef.fl_verify_below_information_displayed_on_are_non_editable()[0m
+    [36mWhen [0m[36mclick on Back button[0m                                     [90m# ProductFamilyStepDef.click_on_Back_button()[0m
+    [36mThen [0m[36mfl select a row under result[0m                             [90m# FunctionalLocationStepDef.fl_select_a_row_under_result()[0m
+    [36mAnd [0m[36mfl click on delete button[0m                                 [90m# FunctionalLocationStepDef.fl_click_on_delete_button()[0m
+    [36mThen [0m[36mfl verify message Family deleted successfully[0m            [90m# FunctionalLocationStepDef.fl_verify_message_Family_deleted_successfully()[0m

@@ -1,0 +1,10 @@
+INFO    2021-04-12 15:56:43,680 [TestNG-PoolService-0] BaseTest  - Config properties loaded
+INFO    2021-04-12 15:56:43,717 [TestNG-PoolService-0] BaseTest  - OR properties loaded
+INFO    2021-04-12 15:56:55,863 [TestNG-PoolService-0] BaseTest  - Chrome driver launched
+INFO    2021-04-12 15:58:06,142 [TestNG-PoolService-0] BaseTest  - Navigated to URL http://interne-optimal.aero-webb.com/daily/
+INFO    2021-04-12 15:58:30,257 [TestNG-PoolService-0] BaseTest  - Typing in an Element : [[ChromeDriver: chrome on XP (27c1a59d5cad2e930252222000552947)] -> name: password] entered the value as : siflotte
+INFO    2021-04-12 15:58:36,597 [TestNG-PoolService-0] BaseTest  - Clicking on an Element : [[ChromeDriver: chrome on XP (27c1a59d5cad2e930252222000552947)] -> xpath: //*[@type='submit']]
+INFO    2021-04-12 15:59:16,430 [TestNG-PoolService-0] BaseTest  - Finding the Element : //button[contains(@class,'logo-wrapper')]
+INFO    2021-04-12 15:59:16,430 [TestNG-PoolService-0] BaseTest  - login sucessfully
+INFO    2021-04-12 15:59:17,246 [TestNG-PoolService-0] BaseTest  - Finding the Element : //button[contains(.,'Engineering Data')]
+INFO    2021-04-12 15:59:17,772 [TestNG-PoolService-0] BaseTest  - Clicking on an Element : //button[contains(.,'Engineering Data')]

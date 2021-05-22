@@ -1,0 +1,128 @@
+[
+  {
+    "source": "^User navigated to login page$",
+    "steps": [
+      {
+        "name": "User navigated to login page",
+        "aggregatedDurations": {
+          "median": 93.1181561,
+          "average": 93.118156100
+        },
+        "durations": [
+          {
+            "duration": 93.1181561,
+            "location": "classpath:features/FunctionalLocation.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User enter Username and Password$",
+    "steps": [
+      {
+        "name": "User enter Username and Password",
+        "aggregatedDurations": {
+          "median": 20.0474118,
+          "average": 20.047411800
+        },
+        "durations": [
+          {
+            "duration": 20.0474118,
+            "location": "classpath:features/FunctionalLocation.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Select given Workspace and Language$",
+    "steps": [
+      {
+        "name": "Select given Workspace and Language",
+        "aggregatedDurations": {
+          "median": 0.000159,
+          "average": 0.000159000
+        },
+        "durations": [
+          {
+            "duration": 0.000159,
+            "location": "classpath:features/FunctionalLocation.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^click on connect button$",
+    "steps": [
+      {
+        "name": "click on connect button",
+        "aggregatedDurations": {
+          "median": 5.4485885,
+          "average": 5.448588500
+        },
+        "durations": [
+          {
+            "duration": 5.4485885,
+            "location": "classpath:features/FunctionalLocation.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^verify user logged in successfully$",
+    "steps": [
+      {
+        "name": "verify user logged in successfully",
+        "aggregatedDurations": {
+          "median": 39.8330844,
+          "average": 39.833084400
+        },
+        "durations": [
+          {
+            "duration": 39.8330844,
+            "location": "classpath:features/FunctionalLocation.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on Engineering Data Tab",
+    "steps": [
+      {
+        "name": "click on Engineering Data Tab",
+        "aggregatedDurations": {
+          "median": 1.3419509,
+          "average": 1.341950900
+        },
+        "durations": [
+          {
+            "duration": 1.3419509,
+            "location": "classpath:features/FunctionalLocation.feature:67"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select \"(.*?)\" option",
+    "steps": [
+      {
+        "name": "select \"Functional Location\" option",
+        "aggregatedDurations": {
+          "median": 8.996127,
+          "average": 8.996127000
+        },
+        "durations": [
+          {
+            "duration": 8.996127,
+            "location": "classpath:features/FunctionalLocation.feature:68"
+          }
+        ]
+      }
+    ]
+  }
+]

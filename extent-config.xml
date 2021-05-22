@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+    	<!-- report theme -->
+    	<!-- standard, dark -->
+    	<theme>standard</theme>
+    
+		<!-- document encoding -->
+		<!-- defaults to UTF-8 -->
+		<encoding>UTF-8</encoding>
+		
+		<!-- protocol for script and stylesheets -->
+		<!-- defaults to https -->
+		<protocol>https</protocol>
+		
+        <!-- title of the document -->
+        <documentTitle>Aerowebb Regression Test Automation Report</documentTitle>
+        
+        <!-- report name - displayed at top-nav -->
+        <reportName style="text-align:center"> 
+        	<Center>AERO-WEBB REGRESSION TEST AUTOMATION REPORT</Center>
+        </reportName>
+        
+        <testViewChartLocation>bottom</testViewChartLocation>
+        
+		<!-- settings to enable/disable views -->
+		<!-- professional version only -->
+		<enableCategoryView>true</enableCategoryView>
+        <enableTimeline>true</enableTimeline>
+        
+        <!-- global date format override -->
+        <!-- defaults to yyyy-MM-dd -->
+        <dateFormat>dd-MM-yyyy</dateFormat>
+        
+        <!-- global time format override -->
+        <!-- defaults to HH:mm:ss -->
+        <timeFormat>HH:mm:ss</timeFormat>
+        
+        <!-- custom javascript -->
+        <scripts> 
+        	<![CDATA[ $(document).ready(function() { 
+        			$(".logo-content").hide(); $(".logo-container").html("<img src='logo.png' height='48' width='150'>")
+        			$("#image-zoom").src("src",src)
+	  				$("#image-zoom").append("src",src);
+
+        		}); 
+     		]]>
+        </scripts>
+
+        <!-- custom styles -->
+        <styles>
+        
+        	<![CDATA[
+        		nav {text-align: center;
+        			 font-size: large;
+        			 font-family: serif	}
+        			 
+        		img {margin-top: 0px;
+        			 width:	auto		};	 
+        	]]>
+        	
+        </styles>
+      	
+    </configuration>
+</extentreports>

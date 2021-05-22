@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 25.985 s <<< FAILURE! - in TestSuite
+loginAsBankManager(testcases.BankLoginTest)  Time elapsed: 4.289 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at testcases.BankLoginTest.loginAsBankManager(BankLoginTest.java:20)
+

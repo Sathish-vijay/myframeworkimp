@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="listeners.Customlisteners" />
+		<listener class-name="extentlisteners.ExtentListeners" />
+	</listeners>
+
+	<test name="POC">
+		<classes>
+			<class name="TestCases.TC01" />
+			<class name="TestCases.TC02" />
+			<class name="TestCases.TC03" />
+			<class name="TestCases.TC04" />
+			<class name="TestCases.TC05" />
+			<class name="TestCases.TC06" />
+			<class name="TestCases.TC07" />
+			<class name="TestCases.TC08" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->

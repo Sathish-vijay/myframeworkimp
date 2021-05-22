@@ -1,0 +1,567 @@
+<html>
+<head>
+<title>TestNG:  POC</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>POC</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>17/8/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Mar 17 00:25:35 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>4192 seconds (4192949 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.TC01_Login.TC01_Login1()'><b>TC01_Login1</b><br>Test class: TestCases.TC01_Login<br/>
+<a href="#Output-745465688" onClick='toggleBox("Output-745465688", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-745465688" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-745465688">
+<a target="_blank" href="17-Mar-2021__12_27_46AM.png">Screenshot link</a><br/>
+<br><br/>
+<a target="_blank" href="17-Mar-2021__12_27_46AM.png"><img src="17-Mar-2021__12_27_46AM.png" height=200 width=200></a><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Advanced Features not present in Fleet Management 
+	at PageObjects.Homepage.Home_Fleet_Management_Data(Homepage.java:151)
+	at TestCases.TC01_Login.TC01_Login1(TC01_Login.java:89)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace745465688", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace745465688'><pre>java.lang.AssertionError: Advanced Features not present in Fleet Management 
+	at org.testng.Assert.fail(Assert.java:94)
+	at PageObjects.Homepage.Home_Fleet_Management_Data(Homepage.java:151)
+	at TestCases.TC01_Login.TC01_Login1(TC01_Login.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>110</td>
+<td>TestCases.TC01_Login@10a9d961</td></tr>
+<tr>
+<td title='TestCases.TC06_AttributeEnginnering.TC06_AttributeEnginnering1()'><b>TC06_AttributeEnginnering1</b><br>Test class: TestCases.TC06_AttributeEnginnering<br/>
+<a href="#Output-2079729792" onClick='toggleBox("Output-2079729792", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2079729792" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2079729792">
+<a target="_blank" href="17-Mar-2021__12_43_33AM.png">Screenshot link</a><br/>
+<br><br/>
+<a target="_blank" href="17-Mar-2021__12_43_33AM.png"><img src="17-Mar-2021__12_43_33AM.png" height=200 width=200></a><br/>
+</div>
+</td>
+<td><div><pre>junit.framework.AssertionFailedError: Error while isElementPresent on element : //div[contains(text(),&apos;Attributes Updated&apos;)]
+	at junit.framework.Assert.fail(Assert.java:47)
+	at base.BaseTest.isElementPresent(BaseTest.java:411)
+	at utilities.TestUtil.save_message_validation(TestUtil.java:1056)
+	at TestCases.TC06_AttributeEnginnering.TC06_AttributeEnginnering1(TC06_AttributeEnginnering.java:104)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2079729792", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2079729792'><pre>junit.framework.AssertionFailedError: Error while isElementPresent on element : //div[contains(text(),&apos;Attributes Updated&apos;)]
+	at junit.framework.Assert.fail(Assert.java:47)
+	at base.BaseTest.isElementPresent(BaseTest.java:411)
+	at utilities.TestUtil.save_message_validation(TestUtil.java:1056)
+	at TestCases.TC06_AttributeEnginnering.TC06_AttributeEnginnering1(TC06_AttributeEnginnering.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>106</td>
+<td>TestCases.TC06_AttributeEnginnering@2fd953a6</td></tr>
+<tr>
+<td title='TestCases.TC06_AttributeFleet.TC06_AttributeFleet1()'><b>TC06_AttributeFleet1</b><br>Test class: TestCases.TC06_AttributeFleet<br/>
+<a href="#Output-428839621" onClick='toggleBox("Output-428839621", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-428839621" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-428839621">
+<a target="_blank" href="17-Mar-2021__12_45_35AM.png">Screenshot link</a><br/>
+<br><br/>
+<a target="_blank" href="17-Mar-2021__12_45_35AM.png"><img src="17-Mar-2021__12_45_35AM.png" height=200 width=200></a><br/>
+</div>
+</td>
+<td><div><pre>junit.framework.AssertionFailedError: Error while isElementPresent on element : //div[contains(text(),&apos;Attributes Updated&apos;)]
+	at junit.framework.Assert.fail(Assert.java:47)
+	at base.BaseTest.isElementPresent(BaseTest.java:411)
+	at utilities.TestUtil.save_message_validation(TestUtil.java:1056)
+	at TestCases.TC06_AttributeFleet.TC06_AttributeFleet1(TC06_AttributeFleet.java:103)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace428839621", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace428839621'><pre>junit.framework.AssertionFailedError: Error while isElementPresent on element : //div[contains(text(),&apos;Attributes Updated&apos;)]
+	at junit.framework.Assert.fail(Assert.java:47)
+	at base.BaseTest.isElementPresent(BaseTest.java:411)
+	at utilities.TestUtil.save_message_validation(TestUtil.java:1056)
+	at TestCases.TC06_AttributeFleet.TC06_AttributeFleet1(TC06_AttributeFleet.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>106</td>
+<td>TestCases.TC06_AttributeFleet@a4add54</td></tr>
+<tr>
+<td title='TestCases.TC09_CatalogEng.TC09_CatalogEng1()'><b>TC09_CatalogEng1</b><br>Test class: TestCases.TC09_CatalogEng<br/>
+<a href="#Output-1834283225" onClick='toggleBox("Output-1834283225", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1834283225" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1834283225">
+<a target="_blank" href="17-Mar-2021__01_06_34AM.png">Screenshot link</a><br/>
+<br><br/>
+<a target="_blank" href="17-Mar-2021__01_06_34AM.png"><img src="17-Mar-2021__01_06_34AM.png" height=200 width=200></a><br/>
+</div>
+</td>
+<td><div><pre>junit.framework.AssertionFailedError: Error while clicking on element :[[ChromeDriver: chrome on XP (cacb5b06d548004529f8097122de2852)] -&gt; id: catalog_save_btn]
+	at junit.framework.Assert.fail(Assert.java:47)
+	at base.BaseTest.click(BaseTest.java:196)
+	at PageObjects.Catalog.save_message_validation(Catalog.java:317)
+	at TestCases.TC09_CatalogEng.TC09_CatalogEng1(TC09_CatalogEng.java:133)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1834283225", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1834283225'><pre>junit.framework.AssertionFailedError: Error while clicking on element :[[ChromeDriver: chrome on XP (cacb5b06d548004529f8097122de2852)] -&gt; id: catalog_save_btn]
+	at junit.framework.Assert.fail(Assert.java:47)
+	at base.BaseTest.click(BaseTest.java:196)
+	at PageObjects.Catalog.save_message_validation(Catalog.java:317)
+	at TestCases.TC09_CatalogEng.TC09_CatalogEng1(TC09_CatalogEng.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>40</td>
+<td>TestCases.TC09_CatalogEng@35432107</td></tr>
+<tr>
+<td title='TestCases.TC17_Warehouse.TC17_Warehouse1()'><b>TC17_Warehouse1</b><br>Test class: TestCases.TC17_Warehouse<br/>
+<a href="#Output-338646453" onClick='toggleBox("Output-338646453", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-338646453" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-338646453">
+<a target="_blank" href="17-Mar-2021__01_32_45AM.png">Screenshot link</a><br/>
+<br><br/>
+<a target="_blank" href="17-Mar-2021__01_32_45AM.png"><img src="17-Mar-2021__01_32_45AM.png" height=200 width=200></a><br/>
+</div>
+</td>
+<td><div><pre>junit.framework.AssertionFailedError: Error while clicking on element ://aw-tab-container[@class=&apos;ng-star-inserted&apos;]//a[contains(text(),&apos;Code1Edit&apos;)]/parent::div
+	at junit.framework.Assert.fail(Assert.java:47)
+	at base.BaseTest.click(BaseTest.java:184)
+	at TestCases.TC17_Warehouse.TC17_Warehouse1(TC17_Warehouse.java:560)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace338646453", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace338646453'><pre>junit.framework.AssertionFailedError: Error while clicking on element ://aw-tab-container[@class=&apos;ng-star-inserted&apos;]//a[contains(text(),&apos;Code1Edit&apos;)]/parent::div
+	at junit.framework.Assert.fail(Assert.java:47)
+	at base.BaseTest.click(BaseTest.java:184)
+	at TestCases.TC17_Warehouse.TC17_Warehouse1(TC17_Warehouse.java:560)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>439</td>
+<td>TestCases.TC17_Warehouse@4b41dd5c</td></tr>
+<tr>
+<td title='TestCases.TC18_BusinessPartner.TC18_BusinessPartner1()'><b>TC18_BusinessPartner1</b><br>Test class: TestCases.TC18_BusinessPartner<br/>
+<a href="#Output-1987267781" onClick='toggleBox("Output-1987267781", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1987267781" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1987267781">
+<a target="_blank" href="17-Mar-2021__01_35_28AM.png">Screenshot link</a><br/>
+<br><br/>
+<a target="_blank" href="17-Mar-2021__01_35_28AM.png"><img src="17-Mar-2021__01_35_28AM.png" height=200 width=200></a><br/>
+</div>
+</td>
+<td><div><pre>junit.framework.AssertionFailedError: Error while type on element : [[ChromeDriver: chrome on XP (15e396e2b875ba82527b91e4cae4c914)] -&gt; id: business_partner_form_code_ctrl]
+	at junit.framework.Assert.fail(Assert.java:47)
+	at base.BaseTest.type(BaseTest.java:300)
+	at PageObjects.BusinessPartner.BusinessPartnerCreateValidation(BusinessPartner.java:280)
+	at TestCases.TC18_BusinessPartner.TC18_BusinessPartner1(TC18_BusinessPartner.java:110)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1987267781", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1987267781'><pre>junit.framework.AssertionFailedError: Error while type on element : [[ChromeDriver: chrome on XP (15e396e2b875ba82527b91e4cae4c914)] -&gt; id: business_partner_form_code_ctrl]
+	at junit.framework.Assert.fail(Assert.java:47)
+	at base.BaseTest.type(BaseTest.java:300)
+	at PageObjects.BusinessPartner.BusinessPartnerCreateValidation(BusinessPartner.java:280)
+	at TestCases.TC18_BusinessPartner.TC18_BusinessPartner1(TC18_BusinessPartner.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>53</td>
+<td>TestCases.TC18_BusinessPartner@5d066c7d</td></tr>
+<tr>
+<td title='TestCases.TC21_Licensing.TC21_Licensing1()'><b>TC21_Licensing1</b><br>Test class: TestCases.TC21_Licensing<br/>
+<a href="#Output-1434786752" onClick='toggleBox("Output-1434786752", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1434786752" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1434786752">
+<a target="_blank" href="17-Mar-2021__12_59_34AM.png">Screenshot link</a><br/>
+<br><br/>
+<a target="_blank" href="17-Mar-2021__12_59_34AM.png"><img src="17-Mar-2021__12_59_34AM.png" height=200 width=200></a><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at PageObjects.Licensing.elementsValidationLicensing(Licensing.java:113)
+	at TestCases.TC21_Licensing.TC21_Licensing1(TC21_Licensing.java:71)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1434786752", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1434786752'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at PageObjects.Licensing.elementsValidationLicensing(Licensing.java:113)
+	at TestCases.TC21_Licensing.TC21_Licensing1(TC21_Licensing.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>30</td>
+<td>TestCases.TC21_Licensing@6ccdb29f</td></tr>
+<tr>
+<td title='TestCases.TC22_WorkFlowManagement.TC22_WorkFlowManagement1()'><b>TC22_WorkFlowManagement1</b><br>Test class: TestCases.TC22_WorkFlowManagement<br/>
+<a href="#Output-730758872" onClick='toggleBox("Output-730758872", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-730758872" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-730758872">
+<a target="_blank" href="17-Mar-2021__01_34_21AM.png">Screenshot link</a><br/>
+<br><br/>
+<a target="_blank" href="17-Mar-2021__01_34_21AM.png"><img src="17-Mar-2021__01_34_21AM.png" height=200 width=200></a><br/>
+</div>
+</td>
+<td><div><pre>junit.framework.AssertionFailedError: Error while clicking on element ://aw-tab-container[@class=&apos;ng-star-inserted&apos;]//h4[contains(text(),&apos;Assignement of the Target status&apos;)]//..//..//..//tbody/tr[contains(.,&apos;Loaded&apos;)]//p-checkbox
+	at junit.framework.Assert.fail(Assert.java:47)
+	at base.BaseTest.click(BaseTest.java:184)
+	at PageObjects.WorkFlowManagement.WorkFlowEdittxtValidation(WorkFlowManagement.java:295)
+	at TestCases.TC22_WorkFlowManagement.TC22_WorkFlowManagement1(TC22_WorkFlowManagement.java:144)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace730758872", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace730758872'><pre>junit.framework.AssertionFailedError: Error while clicking on element ://aw-tab-container[@class=&apos;ng-star-inserted&apos;]//h4[contains(text(),&apos;Assignement of the Target status&apos;)]//..//..//..//tbody/tr[contains(.,&apos;Loaded&apos;)]//p-checkbox
+	at junit.framework.Assert.fail(Assert.java:47)
+	at base.BaseTest.click(BaseTest.java:184)
+	at PageObjects.WorkFlowManagement.WorkFlowEdittxtValidation(WorkFlowManagement.java:295)
+	at TestCases.TC22_WorkFlowManagement.TC22_WorkFlowManagement1(TC22_WorkFlowManagement.java:144)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>79</td>
+<td>TestCases.TC22_WorkFlowManagement@3b96c42e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.TC02_Profile.TC02_Profile1()'><b>TC02_Profile1</b><br>Test class: TestCases.TC02_Profile</td>
+<td></td>
+<td>221</td>
+<td>TestCases.TC02_Profile@130e116b</td></tr>
+<tr>
+<td title='TestCases.TC04_Users.TC04_Users1()'><b>TC04_Users1</b><br>Test class: TestCases.TC04_Users</td>
+<td></td>
+<td>325</td>
+<td>TestCases.TC04_Users@e383572</td></tr>
+<tr>
+<td title='TestCases.TC05_AttributeEnginnering.TC05_AttributeEnginnering1()'><b>TC05_AttributeEnginnering1</b><br>Test class: TestCases.TC05_AttributeEnginnering</td>
+<td></td>
+<td>62</td>
+<td>TestCases.TC05_AttributeEnginnering@363a52f</td></tr>
+<tr>
+<td title='TestCases.TC05_AttributeFleet.TC05_AttributeFleet1()'><b>TC05_AttributeFleet1</b><br>Test class: TestCases.TC05_AttributeFleet</td>
+<td></td>
+<td>60</td>
+<td>TestCases.TC05_AttributeFleet@60856961</td></tr>
+<tr>
+<td title='TestCases.TC07_EditEnginneringAttribute.TC07_EditEnginneringAttribute_1()'><b>TC07_EditEnginneringAttribute_1</b><br>Test class: TestCases.TC07_EditEnginneringAttribute</td>
+<td></td>
+<td>138</td>
+<td>TestCases.TC07_EditEnginneringAttribute@141e5bef</td></tr>
+<tr>
+<td title='TestCases.TC07_EditFleetAttribute.TC07_EditFleetAttribute_1()'><b>TC07_EditFleetAttribute_1</b><br>Test class: TestCases.TC07_EditFleetAttribute</td>
+<td></td>
+<td>138</td>
+<td>TestCases.TC07_EditFleetAttribute@5f9be66c</td></tr>
+<tr>
+<td title='TestCases.TC08_EnnumeratedEngAttribute.TC08_EnnumeratedFleetAttribute1()'><b>TC08_EnnumeratedFleetAttribute1</b><br>Test class: TestCases.TC08_EnnumeratedEngAttribute</td>
+<td></td>
+<td>104</td>
+<td>TestCases.TC08_EnnumeratedEngAttribute@3abada5a</td></tr>
+<tr>
+<td title='TestCases.TC08_EnnumeratedFleetAttribute.TC08_EnnumeratedFleetAttribute_1()'><b>TC08_EnnumeratedFleetAttribute_1</b><br>Test class: TestCases.TC08_EnnumeratedFleetAttribute</td>
+<td></td>
+<td>103</td>
+<td>TestCases.TC08_EnnumeratedFleetAttribute@66c61024</td></tr>
+<tr>
+<td title='TestCases.TC09_CatalogFleet.TC09_CatalogFleet1()'><b>TC09_CatalogFleet1</b><br>Test class: TestCases.TC09_CatalogFleet</td>
+<td></td>
+<td>119</td>
+<td>TestCases.TC09_CatalogFleet@7b420819</td></tr>
+<tr>
+<td title='TestCases.TC13_EnterpriseDefinition.TC13_EnterpriseDefinitin1()'><b>TC13_EnterpriseDefinitin1</b><br>Test class: TestCases.TC13_EnterpriseDefinition</td>
+<td></td>
+<td>352</td>
+<td>TestCases.TC13_EnterpriseDefinition@3adcc812</td></tr>
+<tr>
+<td title='TestCases.TC13_EventSubscription.TC13_EventSubscription1()'><b>TC13_EventSubscription1</b><br>Test class: TestCases.TC13_EventSubscription</td>
+<td></td>
+<td>288</td>
+<td>TestCases.TC13_EventSubscription@7a1a14a4</td></tr>
+<tr>
+<td title='TestCases.TC14_EnterpriseMap.TC14_EnterpriseMap1()'><b>TC14_EnterpriseMap1</b><br>Test class: TestCases.TC14_EnterpriseMap</td>
+<td></td>
+<td>27</td>
+<td>TestCases.TC14_EnterpriseMap@265adfad</td></tr>
+<tr>
+<td title='TestCases.TC15_Site.TC15_CreateNewSite()'><b>TC15_CreateNewSite</b><br>Test class: TestCases.TC15_Site</td>
+<td></td>
+<td>158</td>
+<td>TestCases.TC15_Site@a3d9978</td></tr>
+<tr>
+<td title='TestCases.TC16_WorkShop.TC16_WorkShop1()'><b>TC16_WorkShop1</b><br>Test class: TestCases.TC16_WorkShop</td>
+<td></td>
+<td>463</td>
+<td>TestCases.TC16_WorkShop@61544ae6</td></tr>
+<tr>
+<td title='TestCases.TC19_Contact.TC19_Contact1()'><b>TC19_Contact1</b><br>Test class: TestCases.TC19_Contact</td>
+<td></td>
+<td>131</td>
+<td>TestCases.TC19_Contact@61fe30</td></tr>
+<tr>
+<td title='TestCases.TC20_AdminMonitoring.TC20_AdminMonitoring1()'><b>TC20_AdminMonitoring1</b><br>Test class: TestCases.TC20_AdminMonitoring</td>
+<td></td>
+<td>100</td>
+<td>TestCases.TC20_AdminMonitoring@c9d0d6</td></tr>
+<tr>
+<td title='TestCases.TC04_Setting.TC4_Setting1()'><b>TC4_Setting1</b><br>Test class: TestCases.TC04_Setting</td>
+<td></td>
+<td>58</td>
+<td>TestCases.TC04_Setting@5ddf0d24</td></tr>
+</table><p>
+</body>
+</html>

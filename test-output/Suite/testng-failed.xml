@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="listeners.Customlisteners"/>
+    <listener class-name="extentlisteners.ExtentListeners"/>
+  </listeners>
+  <test name="POC(failed)">
+    <classes>
+      <class name="TestCases.TC05_AttributeFleet">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.TC05_AttributeFleet -->
+      <class name="TestCases.TC04_Users">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.TC04_Users -->
+      <class name="TestCases.TC18_BusinessPartner">
+        <methods>
+          <include name="setUp"/>
+          <include name="TC18_BusinessPartner1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.TC18_BusinessPartner -->
+      <class name="TestCases.TC19_Contact">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.TC19_Contact -->
+      <class name="TestCases.TC17_Warehouse">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="TC17_Warehouse1"/>
+        </methods>
+      </class> <!-- TestCases.TC17_Warehouse -->
+      <class name="TestCases.TC02_Profile">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.TC02_Profile -->
+      <class name="TestCases.TC09_CatalogEng">
+        <methods>
+          <include name="TC09_CatalogEng1"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.TC09_CatalogEng -->
+      <class name="TestCases.TC14_EnterpriseMap">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.TC14_EnterpriseMap -->
+      <class name="TestCases.TC08_EnnumeratedEngAttribute">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.TC08_EnnumeratedEngAttribute -->
+      <class name="TestCases.TC07_EditFleetAttribute">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.TC07_EditFleetAttribute -->
+      <class name="TestCases.TC16_WorkShop">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.TC16_WorkShop -->
+      <class name="TestCases.TC20_AdminMonitoring">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.TC20_AdminMonitoring -->
+      <class name="TestCases.TC15_Site">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.TC15_Site -->
+      <class name="TestCases.TC06_AttributeFleet">
+        <methods>
+          <include name="TC06_AttributeFleet1"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.TC06_AttributeFleet -->
+      <class name="TestCases.TC04_Setting">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.TC04_Setting -->
+      <class name="TestCases.TC13_EnterpriseDefinition">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.TC13_EnterpriseDefinition -->
+      <class name="TestCases.TC22_WorkFlowManagement">
+        <methods>
+          <include name="setUp"/>
+          <include name="TC22_WorkFlowManagement1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.TC22_WorkFlowManagement -->
+      <class name="TestCases.TC13_EventSubscription">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.TC13_EventSubscription -->
+      <class name="TestCases.TC09_CatalogFleet">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.TC09_CatalogFleet -->
+      <class name="TestCases.TC01_Login">
+        <methods>
+          <include name="setUp"/>
+          <include name="TC01_Login1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.TC01_Login -->
+      <class name="TestCases.TC06_AttributeEnginnering">
+        <methods>
+          <include name="setUp"/>
+          <include name="TC06_AttributeEnginnering1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.TC06_AttributeEnginnering -->
+      <class name="TestCases.TC05_AttributeEnginnering">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.TC05_AttributeEnginnering -->
+      <class name="TestCases.TC08_EnnumeratedFleetAttribute">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.TC08_EnnumeratedFleetAttribute -->
+      <class name="TestCases.TC07_EditEnginneringAttribute">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.TC07_EditEnginneringAttribute -->
+      <class name="TestCases.TC21_Licensing">
+        <methods>
+          <include name="setUp"/>
+          <include name="TC21_Licensing1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.TC21_Licensing -->
+    </classes>
+  </test> <!-- POC(failed) -->
+</suite> <!-- Failed suite [Suite] -->
